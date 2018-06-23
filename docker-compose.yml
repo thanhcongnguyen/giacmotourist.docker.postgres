@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  postgres:
+    container_name: giacmotourist.postgres
+    image: postgres:10
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456789
+      POSTGRES_DB: giacmotourist
+    volumes:
+      - ./database:/var/lib/postgresql/data
