@@ -9,3 +9,5 @@ services:
       POSTGRES_DB: giacmotourist
     volumes:
       - ./database:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
